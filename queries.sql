@@ -5,6 +5,7 @@ name - varchar
 skills - varchar
 
 ## Part 2: Test it with SQL
+DROP TABLE
 
 ## Part 3: Test it with SQL
 

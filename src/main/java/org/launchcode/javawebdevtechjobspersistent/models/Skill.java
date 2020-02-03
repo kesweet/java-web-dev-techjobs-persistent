@@ -13,7 +13,7 @@ public class Skill extends AbstractEntity {
     @Size(message = "Too many characters.", max = 500)
     private String description;
 
-    @ManyToMany(mappedBy="skills")
+    @ManyToMany(mappedBy = "skills")
     private List<Job> jobs;
 
     public String getDescription() {
@@ -22,6 +22,14 @@ public class Skill extends AbstractEntity {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public List<Job> getJobs() {
+        return jobs;
+    }
+
+    public void setJobs(List<Job> jobs) {
+        this.jobs = jobs;
     }
 
     public Skill() {}
